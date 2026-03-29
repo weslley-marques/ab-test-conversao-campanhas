@@ -79,13 +79,11 @@ Taxa de Conversão = conversions / impressions
 
 ## 📈 Resultados
 
-| Métrica           | Controle | Teste |
-| ----------------- | -------- | ----- |
-| Taxa de Conversão | 4,86%    | 8,09% |
+| Métrica           | Controle | Teste || Lift | 
+| ----------------- | -------- | ----- || -----|
+| Taxa de Conversão | 4,86%    | 8,09% || **+66,5%**|
 
-### 🚀 Lift:
 
-**+66,5%**
 
 ---
 

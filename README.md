@@ -109,7 +109,7 @@ Diante dos resultados, recomenda-se a **implementação em larga escala**.
 ## 📊 Dashboard
 
 
-![Dashboard](images/ab_test__dataset.png)
+![Dashboard](images/ab_test_dataset.png)
 
 O dashboard foi desenvolvido com foco em clareza e tomada de decisão, contendo:
 
@@ -139,6 +139,6 @@ O dashboard foi desenvolvido com foco em clareza e tomada de decisão, contendo:
 
 ---
 ## 👨‍💻 Autor **Weslley Marques** 
-LinkedIn: www.linkedin.com/in/weslley-marques-86a28937b GitHub: (opcional)
+LinkedIn: www.linkedin.com/in/weslley-marques-86a28937b
 
 ---

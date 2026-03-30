@@ -1,108 +1,141 @@
-# 📊 A/B Test de Conversão — Performance de Campanhas
+# 📊 Análise de Experimento A/B — Otimização de Conversão em Campanhas
 
 ---
 
-## 🧠 Visão Geral
+## 💼 Visão de Negócio
 
-Este projeto apresenta a análise de um experimento A/B com o objetivo de avaliar o impacto de uma nova estratégia de campanha na taxa de conversão.
+Este projeto simula a atuação de um Analista de BI em um ambiente orientado a produto, com foco em:
 
-A análise foi conduzida utilizando SQL para tratamento e modelagem dos dados e Power BI para construção do dashboard, com foco em **tomada de decisão orientada a dados**.
+- Tomada de decisão baseada em dados  
+- Avaliação de experimentos (A/B Test)  
+- Otimização de métricas de crescimento (conversão e receita)  
+
+A análise busca responder se uma nova estratégia de campanha deve ser escalada com base em evidências quantitativas.
 
 ---
 
-## 🎯 Problema de Negócio
+## 🧠 Problema de Negócio
 
-Em campanhas de marketing digital, pequenas mudanças podem gerar grande impacto na conversão.
+Em ambientes digitais de alta escala, pequenas mudanças podem gerar grande impacto em receita.
 
-Neste contexto, buscamos responder:
+Diante disso, surge a necessidade de validar decisões por meio de experimentação:
 
-* A nova estratégia aumenta a conversão?
-* O ganho é consistente ao longo do tempo?
-* Vale a pena implementar em larga escala?
+- A nova estratégia de campanha realmente melhora a conversão?  
+- O ganho observado é consistente ao longo do tempo?  
+- Vale a pena escalar essa mudança para toda a base de usuários?  
+
+---
+
+## 🎯 Objetivo
+
+- Avaliar o impacto de uma nova estratégia na taxa de conversão  
+- Medir o ganho incremental (lift) entre grupos  
+- Validar consistência do experimento ao longo do tempo  
+- Gerar recomendação baseada em dados para tomada de decisão  
+
+---
+
+## 📊 Métrica Principal
+
+Taxa de Conversão = conversões / impressões  
+
+Essa métrica é essencial para avaliar a eficiência de campanhas e impacto direto em receita.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-* SQL (MySQL)
-* Power BI
-* CSV (dados estruturados)
+- SQL (tratamento e modelagem dos dados)  
+- Power BI (visualização e análise)  
+- CSV (dataset estruturado)  
 
 ---
 
-## 🗂️ Estrutura do Projeto
-
-```
-📁 ab-test-conversao-campanhas/
- ├── data/
- │   └── ab_data.csv
- ├── dashboard/
- │   └── ab_test.pbix
- ├── sql/
- │   └── scripts_ab_test.sql
- ├── images/
- │   └── dashboard.png
- └── README.md
-```
-
----
-
-## ⚙️ Metodologia
+## 🔍 Metodologia
 
 ### 🔹 1. Preparação dos Dados
+- Consolidação das bases de controle e teste  
+- Padronização das variáveis  
+- Criação da base analítica única (`ab_data`)  
 
-* Importação das bases de controle e teste
-* Tratamento e padronização dos dados
-* Criação da tabela final unificada (`ab_data`)
+### 🔹 2. Estrutura do Experimento
 
----
+- Grupo Controle: estratégia atual  
+- Grupo Teste: nova estratégia de campanha  
 
-### 🔹 2. Métrica Principal
+### 🔹 3. Análises Realizadas
 
-A análise foi baseada na **Taxa de Conversão**:
-
-```
-Taxa de Conversão = conversions / impressions
-```
-
----
-
-### 🔹 3. Análise Realizada
-
-* Comparação entre grupo controle e teste
-* Evolução da conversão ao longo do tempo
-* Análise de conversão acumulada
-* Volume de impressões
-* Cálculo de Lift (%)
+- Comparação direta de conversão entre grupos  
+- Evolução temporal da conversão  
+- Análise acumulada (consistência do experimento)  
+- Avaliação de volume de impressões  
+- Cálculo de lift (%)  
 
 ---
 
 ## 📈 Resultados
 
 | Métrica           | Controle | Teste |
-| ----------------- | -------- | ----- |
-| Taxa de Conversão | 4,86%    | 8,09% |
+|------------------|---------|------|
+| Taxa de Conversão | 4,86%   | 8,09% |
 
-### 🚀 Lift:
-
-**+66,5%**
+### 🚀 Lift: +66,5%
 
 ---
 
-## 💡 Principais Insights
+## 🚨 Principais Insights
 
-* O grupo teste apresentou conversão significativamente superior ao controle
-* O ganho foi consistente ao longo do tempo
-* Mesmo com menor volume de impressões, o desempenho foi melhor
-* Existe forte evidência para adoção da nova estratégia
+- O grupo teste apresentou ganho expressivo de conversão (+66,5%)  
+- O desempenho superior foi consistente ao longo do tempo  
+- Mesmo com menor volume de impressões, o grupo teste performou melhor  
+- Existe forte evidência de ganho de eficiência com a nova estratégia  
 
 ---
 
-## 🧾 Conclusão
+## 🧪 Hipótese de Negócio
 
-A nova estratégia aplicada ao grupo teste demonstrou alto impacto positivo na taxa de conversão, com aumento de aproximadamente **66,5%**.
+A nova estratégia de campanha aumenta a relevância da oferta ou melhora a experiência do usuário, elevando a probabilidade de conversão.
 
-Diante dos resultados, recomenda-se a **implementação em larga escala**.
+---
+
+## ⚗️ Proposta de Experimentação (Escala)
+
+Antes da implementação total, recomenda-se:
+
+- Expandir o teste para uma amostra maior de usuários  
+- Validar o comportamento em diferentes segmentos  
+- Monitorar possíveis variações de performance  
+
+---
+
+## 📊 Métricas de Validação
+
+- Taxa de conversão  
+- Receita por usuário (RPU)  
+- Custo por aquisição (CPA)  
+- Retenção pós-conversão  
+
+---
+
+## 📈 Impacto no Negócio
+
+A implementação da nova estratégia pode gerar:
+
+- Aumento significativo de receita  
+- Melhor eficiência de campanhas  
+- Redução do custo por conversão  
+
+**Resultado esperado:** mais retorno com o mesmo investimento.
+
+---
+
+## 🧠 Recomendação Estratégica
+
+Com base nos resultados obtidos:
+
+- Recomenda-se a implementação gradual da nova estratégia  
+- Acompanhamento contínuo das métricas após rollout  
+- Testes adicionais para otimização contínua  
 
 ---
 
@@ -110,35 +143,34 @@ Diante dos resultados, recomenda-se a **implementação em larga escala**.
 
 ![Dashboard](images/ab_test_dataset.png)
 
-O dashboard foi desenvolvido com foco em clareza e tomada de decisão, contendo:
+O dashboard foi desenvolvido com foco em tomada de decisão e inclui:
 
-* KPIs principais (Conversão e Lift)
-* Evolução temporal da conversão
-* Análise acumulada (consistência do experimento)
-* Comparação entre grupos
+- KPIs principais (Conversão e Lift)  
+- Evolução temporal da conversão  
+- Conversão acumulada  
+- Comparação entre grupos  
 
 ---
 
 ## 🚀 Diferenciais do Projeto
 
-* Foco em problema real de negócio
-* Uso correto de métricas (impressões como base)
-* Implementação de análise acumulada
-* Storytelling orientado à decisão
-* Estrutura organizada para portfólio
+- Aplicação prática de A/B Test  
+- Foco em decisão de negócio  
+- Análise de consistência ao longo do tempo  
+- Comunicação orientada a stakeholders  
+- Estrutura alinhada com ambientes data-driven  
 
 ---
 
-## 📌 Possíveis Melhorias Futuras
+## 🔮 Próximos Passos
 
-* Teste estatístico (significância / p-value)
-* Segmentação por tipo de campanha
-* Análise por canal ou região
-* Modelos preditivos de conversão
+- Aplicação de testes estatísticos (p-value / significância)  
+- Segmentação por canal, região ou perfil de usuário  
+- Análise de impacto em retenção  
+- Modelagem preditiva de conversão  
 
 ---
 
-## 👨‍💻 Autor **Weslley Marques** 
+## 👨‍💻 Autor  
+**Weslley Marques**  
 LinkedIn: www.linkedin.com/in/weslley-marques-86a28937b
-
----

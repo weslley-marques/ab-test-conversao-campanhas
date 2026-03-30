@@ -1,8 +1,8 @@
-# 📊 Análise de Experimento A/B — Otimização de Conversão em Campanhas
+#  Análise de Experimento A/B — Otimização de Conversão em Campanhas
 
 ---
 
-## 💼 Visão de Negócio
+##  Visão de Negócio
 
 Este projeto simula a atuação de um Analista de BI em um ambiente orientado a produto, com foco em:
 
@@ -14,7 +14,7 @@ A análise busca responder se uma nova estratégia de campanha deve ser escalada
 
 ---
 
-## 🧠 Problema de Negócio
+##  Problema de Negócio
 
 Em ambientes digitais de alta escala, pequenas mudanças podem gerar grande impacto em receita.
 
@@ -26,7 +26,7 @@ Diante disso, surge a necessidade de validar decisões por meio de experimentaç
 
 ---
 
-## 🎯 Objetivo
+##  Objetivo
 
 - Avaliar o impacto de uma nova estratégia na taxa de conversão  
 - Medir o ganho incremental (lift) entre grupos  
@@ -35,7 +35,7 @@ Diante disso, surge a necessidade de validar decisões por meio de experimentaç
 
 ---
 
-## 📊 Métrica Principal
+##  Métrica Principal
 
 Taxa de Conversão = conversões / impressões  
 
@@ -43,7 +43,7 @@ Essa métrica é essencial para avaliar a eficiência de campanhas e impacto dir
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - SQL (tratamento e modelagem dos dados)  
 - Power BI (visualização e análise)  
@@ -51,7 +51,7 @@ Essa métrica é essencial para avaliar a eficiência de campanhas e impacto dir
 
 ---
 
-## 🔍 Metodologia
+##  Metodologia
 
 ### 🔹 1. Preparação dos Dados
 - Consolidação das bases de controle e teste  
@@ -73,17 +73,17 @@ Essa métrica é essencial para avaliar a eficiência de campanhas e impacto dir
 
 ---
 
-## 📈 Resultados
+##  Resultados
 
 | Métrica           | Controle | Teste |
 |------------------|---------|------|
 | Taxa de Conversão | 4,86%   | 8,09% |
 
-### 🚀 Lift: +66,5%
+###  Lift: +66,5%
 
 ---
 
-## 🚨 Principais Insights
+##  Principais Insights
 
 - O grupo teste apresentou ganho expressivo de conversão (+66,5%)  
 - O desempenho superior foi consistente ao longo do tempo  
@@ -92,13 +92,13 @@ Essa métrica é essencial para avaliar a eficiência de campanhas e impacto dir
 
 ---
 
-## 🧪 Hipótese de Negócio
+##  Hipótese de Negócio
 
 A nova estratégia de campanha aumenta a relevância da oferta ou melhora a experiência do usuário, elevando a probabilidade de conversão.
 
 ---
 
-## ⚗️ Proposta de Experimentação (Escala)
+##  Proposta de Experimentação (Escala)
 
 Antes da implementação total, recomenda-se:
 
@@ -108,7 +108,7 @@ Antes da implementação total, recomenda-se:
 
 ---
 
-## 📊 Métricas de Validação
+##  Métricas de Validação
 
 - Taxa de conversão  
 - Receita por usuário (RPU)  
@@ -117,7 +117,7 @@ Antes da implementação total, recomenda-se:
 
 ---
 
-## 📈 Impacto no Negócio
+##  Impacto no Negócio
 
 A implementação da nova estratégia pode gerar:
 
@@ -129,7 +129,7 @@ A implementação da nova estratégia pode gerar:
 
 ---
 
-## 🧠 Recomendação Estratégica
+##  Recomendação Estratégica
 
 Com base nos resultados obtidos:
 
@@ -139,7 +139,7 @@ Com base nos resultados obtidos:
 
 ---
 
-## 📊 Dashboard
+##  Dashboard
 
 ![Dashboard](images/ab_test_dataset.png)
 
@@ -152,7 +152,7 @@ O dashboard foi desenvolvido com foco em tomada de decisão e inclui:
 
 ---
 
-## 🚀 Diferenciais do Projeto
+## Diferenciais do Projeto
 
 - Aplicação prática de A/B Test  
 - Foco em decisão de negócio  
@@ -162,7 +162,7 @@ O dashboard foi desenvolvido com foco em tomada de decisão e inclui:
 
 ---
 
-## 🔮 Próximos Passos
+## Próximos Passos
 
 - Aplicação de testes estatísticos (p-value / significância)  
 - Segmentação por canal, região ou perfil de usuário  
